@@ -1,3 +1,3 @@
 # guidelines dudka agency
 
-### [CSS](../CSS.md)
+### [CSS](CSS.md)
