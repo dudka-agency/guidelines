@@ -78,7 +78,7 @@
 
 ## Элементы управления
 
-`button`, `btn` —  кнопка, например, для отправки формы
+`btn`, `button`,  —  кнопка, например, для отправки формы
 
 `control` — элемент управления, например, стрелки «Вперёд/назад» в фотогалерее, кнопки управления слайдером
 
@@ -160,25 +160,6 @@
 
 ## Примеры использования
 
-### Простой список
-
-```html
-<ul class="list">
-  <li class="item">Первое</li>
-  <li class="item">Второе</li>
-  <li class="item">Третье</li>
-</ul>
-```
-
-### Картинка пользователя (юзерпик)
-
-```html
-<div class="user">
-  <img class="user__img" src="userpic.png" alt="Дормидонт Петрович">
-  <a class="user__link" href="#">Дормидонт Петрович</a>
-</div>
-```
-
 ### Галерея
 
 ```html
@@ -191,53 +172,6 @@
       <img class="gallery__img" src="trees.jpg" alt="Парк «Три сосны»">
     </li>
   </ul>
-</div>
-```
-
-### Навигация
-
-```html
-<nav class="nav">
-  <a class="nav__link nav__link--active">Главная</a>
-  <a class="nav__link" href="#">Второстепенная</a>
-  <a class="nav__link" href="#">Третья с конца</a>
-  <a class="nav__link" href="#">Предпоследняя</a>
-  <a class="nav__link" href="#">Совсем конец</a>
-</nav>
-```
-
-```html
-<nav class="nav">
-  <ul class="nav__list">
-    <li class="nav__item nav__item--current">
-      <a class="nav__link">Главная</a>
-    </li>
-    <li class="nav__item">
-      <a class="nav__link" href="#">Статьи</a>
-    </li>
-    <li class="nav__item">
-      <a class="nav__link" href="#">Фотогалерея</a>
-    </li>
-    <li class="nav__item">
-      <a class="nav__link" href="#">Контакты</a>
-    </li>
-  </ul>
-</nav>
-```
-
-### Виджет в боковой колонке
-
-```html
-<div class="widget">
-  <h4 class="widget__title">Выращиваем желе</h4>
-
-  <div class="widget__content">
-    <p>Чтобы вырастить общительное дружелюбное желе,
-    нам потребуется рулон поролона, два килограмма сахара,
-    три яйца и пол чайной чашки ацетона.</p>
-
-    <a class="widget__link" href="#">Не читать дальше...</a>
-  </div>
 </div>
 ```
 
@@ -299,62 +233,3 @@
 </article>
 ```
 
-### Статья или пост в блоге (сложный вариант)
-
-```html
-<article class="entry">
-  <header class="entry__header">
-    <h3 class="entry__title title-entry">
-      <a class="title-entry__link" href="#">Резиновые уточки как способ самопознания</a>
-    </h3>
-
-    <time class="entry__datetime">32 мая, 10:87</time>
-  </header>
-
-  <div class="entry__author author-entry">
-    <img class="author-entry__img" src="userpic.png" alt="Василиса Сергеевич">
-
-    <a class="author-entry__link" href="#">Василиса Сергеевич</a>
-  </div>
-
-  <div class="entry__content">
-    Достаньте с чердака коробку с полусотней резиновых уточек,
-    оставшихся после празднования нового года. Из уточек
-    и горящих свечей выложите пентаграмму на полу комнаты.
-    Сядьте посередине в позу лотоса, в каждую руку возьмите
-    по немецко-бразильскому словарю, прокашляйтесь, наберите
-    полную грудь воздуха и громко и уверенно,
-    с полной самоотдачей скажите "Кря!"
-  </div>
-
-  <div class="entry__tags tags-entry">
-    <h4 class="tags-entry__title">Метки</h4>
-
-    <ul class="tags-entry__list">
-      <li class="tags-entry__item">
-        <a class="tags-entry__link" href="#">хоровод своими руками</a>
-      </li>
-      <li class="tags-entry__item">
-        <a class="tags-entry__link" href="#">фарфоровые тапки</a>
-      </li>
-      <li class="tags-entry__item">
-        <a class="tags-entry__link" href="#">гуталин в кулинарии</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="entry__actions actions-entry">
-    <ul class="actions-entry__list">
-      <li class="actions-entry__item actions-entry__item--read">
-        <a class="actions-entry__link" href="#">238 ответов</a>
-      </li>
-      <li class="actions-entry__item actions-entry__item--write">
-        <a class="actions-entry__link" href="#">Написать в спортлото</a>
-      </li>
-      <li class="actions-entry__item actions-entry__item--share">
-        <a class="actions-entry__link" href="#">Поделиться</a>
-      </li>
-    </ul>
-  </div>
-</article>
-```
