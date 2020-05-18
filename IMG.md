@@ -14,12 +14,13 @@
 * [Image](https://www.advancedcustomfields.com/resources/image/)
 * [Gallery](https://www.advancedcustomfields.com/resources/gallery/)
 ```php
+<?php     
 // Не хорошо
 $image = get_field('image'); // return type Image Object
 
 if (!empty($image)) { ?>
     <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
-<?php } ?>
+<?php }
 
 // Хорошо
 $image = get_field('image'); // return type Image ID
