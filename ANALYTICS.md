@@ -9,22 +9,22 @@
 
 ## Events
 
-`event` - "Button", "Contact Form"
+`category` - "Button", "Contact Form"
 
 `action` - "click", "send"
 
 `label` - "Phone", "Link"
 
 ### Если на сайте установлен - "Global site tag (gtag.js)"
-gtag('event', 'ButtonReservation', {'event_category': 'click', 'event_label': 'Phone'});
+gtag('event', 'action', {'event_category': 'category', 'event_label': 'label'});
 
 ### Если на сайте установлен - "Google Tag Manager"
-dataLayer.push({'event': 'ButtonReservation', 'analytics_action': 'click', 'analytics_label': 'Phone'});
+dataLayer.push({'event': 'category', 'analytics_action': 'action', 'analytics_label': 'label'});
 
 После этого в GTM необходимо создать переменные analytics_action и analytics_label и добавить событие ButtonReservation для отправки его в GA
 
 ### Если на сайте установлен - "analytics.js" (старый вариант, надо обновлять)
-ga('send', {hitType: 'event', 'ButtonReservation': 'Videos', eventAction: 'click', eventLabel: 'Phone'});
+ga('send', {hitType: 'event', 'category': 'Videos', eventAction: 'action', eventLabel: 'label'});
 
 ### Facebook pixel event
 fbq('track', 'Purchase', {value: 25, currency: 'USD'});
