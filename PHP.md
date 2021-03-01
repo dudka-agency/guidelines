@@ -4,7 +4,7 @@
 + Валидация (validation) и санация (sanitization) вводимых данных. На стороне frontend и backend
 + Подготовка и очистка прямых SQL запросов
 + Экранирование (escape) или валидация (validate) вывода
-+ Nonce - являются инструментов для борьбы с CSRF — межсайтовая подделка запроса
++ Nonce - являются инструментов для борьбы с CSRF — межсайтовая подделка запроса ([example JS](https://github.com/dudka-agency/build-wp/blob/master/wp-content/themes/classy/assets/js/examples/wp-ajax.js#L7), [example PHP](https://github.com/dudka-agency/build-wp/blob/master/wp-content/themes/classy/app/custom/ajax/theme_ajax.php#L3))
 + Избегайте Heredoc и Nowdoc - делает невозможным применение практики позднего экранирования (late escaping)
 + Обновление зависимостей (composer.json, package.json)
 + Хеширование паролей
